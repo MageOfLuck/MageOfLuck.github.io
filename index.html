@@ -11,15 +11,15 @@
     <title>MMSF3 Legacy Collection 100%</title>
     <style>
       img {
-        width: 100%;
-        height: 75%;
-        border-radius: 50px;
+        width: 80%;
+        max-width: 720px;
+        height: auto;
+        border-radius: 20px;
         display: block;
-        margin: 0 auto;
+        margin: 16px auto 24px;
       }
       body {
         margin: 0;
-        background-color: rgba(17, 0, 253, 0.904);
         min-height: 100vh;
         padding: 0 8%;
         background: repeating-linear-gradient(
@@ -30,33 +30,40 @@
           rgb(4, 0, 250) 20px
         );
       }
-
       .inner {
         background-color: black;
         min-height: 100vh;
         border-radius: 40px;
         padding-top: 15px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
         padding-bottom: 30px;
-      }
-      .fixt {
-        color: white;
-        text-align: center;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        max-width: 200 px;
-        margin-left: auto;
-        margin-right: auto;
       }
       .fixtextbattle {
         color: white;
         text-align: left;
         font-family:
           "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        max-width: 200 px;
-        margin-left: 28%;
-        margin-right: 28%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 75ch;
+        line-height: 1.7;
+        padding-left: 2rem;
+      }
+      .textfixbase {
+        color: white;
+        text-align: center;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100ch;
+      }
+      h1.textfixbase {
+        font-size: 210%;
+        margin-top: 20px;
+        margin-bottom: 16px;
+        line-height: 1.2;
       }
       .standard {
         color: rgb(207, 204, 0);
@@ -67,87 +74,142 @@
       .giga {
         color: rgb(209, 0, 0);
       }
-      a:link {
-        color: azure;
-      }
       .GrayHead {
-        color: white;
-        text-align: center;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        max-width: 200 px;
-        margin-left: auto;
-        margin-right: auto;
         background-color: gray;
         border-radius: 40px;
         font-size: 175%;
+        border: 2px solid rgb(48, 221, 221);
       }
       .Starforce {
-        color: white;
-        text-align: center;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         max-width: 55%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: rgb(48, 221, 221);
+        background-color: rgb(78, 221, 166);
         border-radius: 40px;
         font-size: 175%;
+        border: 4px solid rgb(12, 29, 126);
       }
       .standardCard {
-        color: white;
-        text-align: center;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         max-width: 45%;
-        margin-left: auto;
-        margin-right: auto;
         background-color: rgb(207, 204, 0);
         border-radius: 40px;
         font-size: 125%;
+        border: 4px solid rgb(100, 107, 0);
       }
+
       .megaCard {
-        color: white;
-        text-align: center;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         max-width: 45%;
-        margin-left: auto;
-        margin-right: auto;
         background-color: rgb(22, 50, 207);
         border-radius: 40px;
         font-size: 125%;
+        border: 4px solid rgb(13, 31, 131);
       }
       .gigaCard {
-        color: white;
-        text-align: center;
-        font-family:
-          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         max-width: 45%;
-        margin-left: auto;
-        margin-right: auto;
         background-color: rgb(209, 0, 0);
         border-radius: 40px;
         font-size: 125%;
+        border: 4px solid rgb(107, 0, 0);
+      }
+      a :link {
+        color: rgb(253, 253, 253);
+      }
+      .toc {
+        background-color: #111;
+        border: 2px solid rgb(48, 221, 221);
+        border-radius: 20px;
+        padding: 20px 28px;
+        margin: 20px auto 30px;
+        max-width: 75ch;
+      }
+      .toc h3 {
+        color: rgb(48, 221, 221);
+        text-align: center;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        margin: 0 0 14px 0;
+        font-size: 115%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .toc a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 95%;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: background 0.15s;
+        line-height: 1.6;
+      }
+      .toc a:hover {
+        background-color: rgba(48, 221, 221, 0.15);
+        color: rgb(48, 221, 221);
+      }
+      .toc a::before {
+        content: "→ ";
+        color: rgb(48, 221, 221);
+      }
+      .titleborder {
+        background-color: #111;
+        border: 2px solid rgb(48, 221, 221);
+        border-radius: 20px;
+        padding: 20px 28px;
+        margin: 20px auto 30px;
+        max-width: 75ch;
       }
     </style>
   </head>
 
   <body>
     <div class="inner">
-      <h1 class="fixt" style="font-size: 260%">
-        Steam 100% achievements for MMSF Legacy Collection
+      <h1 class="textfixbase titleborder">
+        Steam 100% Achievements for MMSF Legacy Collection
       </h1>
       <img src="images/blackace.jpg" alt="My goat the finalized Black Ace" />
-      <h2 class="GrayHead">Disclaimers</h2>
-      <p class="fixt">
+      <div class="toc">
+        <h3>Jump to Section</h3>
+        <a href="#Disclaimers">Disclaimers</a>
+        <a href="#Mega Weapon Locations">Mega Weapon Locations</a>
+        <a href="#Battle Network Blaster">Battle Network Blaster</a>
+        <a href="#The Lonely Heart">The Lonely Heart</a>
+        <a href="#All You've Got">All You've Got</a>
+        <a href="#Wallpaper Collecter">Wallpaper Collecter</a>
+        <a href="#Stuffed Snowball &amp; Waves of Destruction"
+          >Stuffed Snowball &amp; Waves of Destruction</a
+        >
+        <a href="#Noise Hand Bonus">Noise Hand Bonus</a>
+        <a href="#VIP Access &amp; Quick Reflexes"
+          >VIP Access &amp; Quick Reflexes</a
+        >
+        <a href="#Omega Treasure">Omega Treasure</a>
+        <a href="#No Hurt For Hertz">No Hurt for Hertz</a>
+        <a href="#Illegal Cards &amp; Noise Frags"
+          >Make Some Noise, Stacked Deck, Card Connissuer, &amp; Noise
+          Collecter</a
+        >
+        <a href="#Lucky Star">Lucky Star</a>
+        <a href="#Stage Sweeper">Stage Sweeper</a>
+        <a href="#Stars aligned">Stars Aligned</a>
+        <a href="#Secret Attack">Secret Attack</a>
+        <a href="#Close Encounter">Close Encounter</a>
+        <a href="#Star Supporter">Star Supporter</a>
+        <a href="#High Capacity">High Capacity</a>
+        <a href="#Best Combo Creator &amp; Legend Card Creator"
+          >Best Combo Creator &amp; Legend Card Creator</a
+        >
+        <a href="#Suit Victory">Suit Victory</a>
+        <a href="#Battle Cards">Battle Cards</a>
+      </div>
+      <h2 class="textfixbase GrayHead" id="Disclaimers">Disclaimers</h2>
+      <p class="textfixbase">
         Saying this ahead of time this is a major compilation of information
         from the Rockman EXE Zone Wiki. The goal is to show the bare minimum
         amount of content needed to 100% MMSFLC Contact me via email:
         <a href="mailto:ace.joker985@gmail.com">ace.joker985@gmail.com</a>
         for any issues (I know its not a creative email)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         This is a guide on how to complete achievements or awards for the
         Megaman Starforce Legacy collection. Please note that the first 6 will
         not be covered as they require you to complete the first and last act of
@@ -157,130 +219,161 @@
         of each game as they do not require you to fight each game's super boss
         or finish every help request etc.
       </p>
-      <h2 class="GrayHead">Mega Weapon Locations</h2>
-      <h3 class="Starforce">Starforce 1</h3>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Mega Weapon Locations">
+        Mega Weapon Locations
+      </h2>
+      <h3 class="textfixbase Starforce">Starforce 1</h3>
+      <p class="textfixbase">
         Slash Claw is on the Sci Museum EM Wave Road (BMW) at Amaken
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Porcu Needles is the Cipher Wave Change Geo Stelar, On The Air!!
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Demon's Eye is a Cipher Mail which is the anagram for Cancer Bubble
       </p>
-      <p class="fixt">Bubble Fist is the Cipher Time to go On Air!</p>
-      <p class="fixt">
+      <p class="textfixbase">Bubble Fist is the Cipher Time to go On Air!</p>
+      <p class="textfixbase">
         Magic Breath is the Cipher KMALEETZCP the anagram for Zack Temple
       </p>
-      <p class="fixt">Zenny Finder is in the ticket Machine at Nacys Roof</p>
-      <p class="fixt">
+      <p class="textfixbase">
+        Zenny Finder is in the ticket Machine at Nacys Roof
+      </p>
+      <p class="textfixbase">
         Card Finder is in the Spacesuit Comp (BMW) in the Space station
       </p>
-      <h3 class="Starforce">Starforce 2</h3>
-      <p class="fixt">Starhoop is in the Suite EM Wave World as a (BMW)</p>
-      <p class="fixt">
+      <h3 class="textfixbase Starforce">Starforce 2</h3>
+      <p class="textfixbase">
+        Starhoop is in the Suite EM Wave World as a (BMW)
+      </p>
+      <p class="textfixbase">
         Quick Ring is the Cipher Wave Battling, it's like a form of greeting!
       </p>
-      <p class="fixt">Image Eye is the Cipher AXIMSOEG</p>
-      <p class="fixt">
+      <p class="textfixbase">Image Eye is the Cipher AXIMSOEG</p>
+      <p class="textfixbase">
         Sang Claw is the Cipher Pull off a high-powered Best-Combo!
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Zenny Finder is in the Fossilized sandwich at the Whazzap Lines
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Card Finder is special as it requires a certain amount of link power
         before acquiring. Please equip LM Master Shin and OG Megaman before
         talking to the Wave World NPC at the Whazzap Lines and they will give it
         to you.
       </p>
-      <h2 class="GrayHead">Battle Network Blaster</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Battle Network Blaster">
+        Battle Network Blaster
+      </h2>
+      <p class="textfixbase">
         The final blaster for SF2 is the Battle Network Blaster which requires
         completing its own quest and is a stand alone achievement. You will have
         to go to a comp in random parts of the game and battle viruses after
         examining a box.
       </p>
-      <p class="fixt">The first being in the Mailbox Comp at Echo Ridge</p>
-      <p class="fixt">
+      <p class="textfixbase">
+        The first being in the Mailbox Comp at Echo Ridge
+      </p>
+      <p class="textfixbase">
         The second being at the Old Binoculars comp at IFL Tower
       </p>
-      <p class="fixt">The third at the Lost Ice Stat Comp in Foodtopia</p>
-      <p class="fixt">The fourth being at the Sunken Ship Comp at Loch Mess</p>
-      <p class="fixt">The last being in the Ammonite Comp in Whazzap Lines</p>
-      <p class="fixt">
+      <p class="textfixbase">
+        The third at the Lost Ice Stat Comp in Foodtopia
+      </p>
+      <p class="textfixbase">
+        The fourth being at the Sunken Ship Comp at Loch Mess
+      </p>
+      <p class="textfixbase">
+        The last being in the Ammonite Comp in Whazzap Lines
+      </p>
+      <p class="textfixbase">
         Once they are collected and read in the key items section and you pulse
         out you will receive mail from Lan Hikari which grants the Battle
         Network Blaster and its Achievement.
       </p>
-      <h3 class="Starforce">Starforce 3</h3>
-      <p class="fixt">
+      <h3 class="textfixbase Starforce">Starforce 3</h3>
+      <p class="textfixbase">
         Star Hoop is found in the Prop Cabinet Cyber Core in WBG Studios
       </p>
-      <p class="fixt">Virus Claw is the Cipher Eta28274</p>
-      <p class="fixt">Gale Claw is the Cipher Chi78584</p>
-      <p class="fixt">Danger Ring is the Cipher Psi09659</p>
-      <p class="fixt">Battle Network Blaster EX is the Cipher Omega68805</p>
-      <p class="fixt">
+      <p class="textfixbase">Virus Claw is the Cipher Eta28274</p>
+      <p class="textfixbase">Gale Claw is the Cipher Chi78584</p>
+      <p class="textfixbase">Danger Ring is the Cipher Psi09659</p>
+      <p class="textfixbase">
+        Battle Network Blaster EX is the Cipher Omega68805
+      </p>
+      <p class="textfixbase">
         Zenny Finder is sold for 6000 Zennys by a hertz on National Astro Wave 1
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Card Finder is in Mini Antenna Cyber Core as a (BMW) (which requires
         dealer key to open)
       </p>
-      <h2 class="GrayHead">The Lonely Heart</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="The Lonely Heart">
+        The Lonely Heart
+      </h2>
+      <p class="textfixbase">
         The item can be found by talking to a hertz and responding No to him
         inside a comp in the Space Station, you need this to open a purple door
         in Deep Space 1 or 2.
       </p>
-      <h2 class="GrayHead">All You've Got</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="All You've Got">All You've Got</h2>
+      <p class="textfixbase">
         Can be done by selecting all 6 cards on the custom screen which can be
         done during any time in the game but is especially easier after gaining
         side select when using the Starforce or Tribe On!.
       </p>
-      <h2 class="GrayHead">Wallpaper Collecter</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Wallpaper Collecter">
+        Wallpaper Collecter
+      </h2>
+      <p class="textfixbase">
         The first 3 can be obtained by going to Luna's, Zack's, and Bud's
         Computers and downloading their data.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         The next two are at Wilshire Hills the first being in the Mega Display
         Comp bought from a merchant hertz for 3000 Zennys and the second being
         sold by the attendant next to master shin for 3000 Zennys.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         The other 2 are help quests for Sonia (input for her song) and Amy's
         help quest where you giver her 3 separate battle cards that can be found
         in Grizzly Peak and in the Sky Wave.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         The last wallpaper is from the downed hertz in Alternate Wilshire Hills
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Please note that the DX wallpaper is <b>not</b> required for this
         achievement. There is also a bug where if Apollo Flame DX is defeated
         last it will not grant the wallpaper, it can still be rewarded by
         defeating another DX boss after.
       </p>
-      <h2 class="GrayHead">Stuffed Snowball &amp Waves of Destruction</h2>
-      <p class="fixt">
+      <h2
+        class="textfixbase GrayHead"
+        id="Stuffed Snowball &amp Waves of Destruction"
+      >
+        Stuffed Snowball &amp Waves of Destruction
+      </h2>
+      <p class="textfixbase">
         Requires rolling a (Snowball 1, 2, 3, or X) into 2 obstacles which can
         be done during Plesio Waves fight in Starforce 2 where he spawns 2
         stones that will eventually line up for the card. You can also break 30
         obstacles using break (or the aforementioned Snowball) battle cards for
         the other achievement. Can be done in Starforce 2 or 3.
       </p>
-      <h2 class="GrayHead">Noise Hand Bonus</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Noise Hand Bonus">
+        Noise Hand Bonus
+      </h2>
+      <p class="textfixbase">
         Requires you to use the Noise Mod Gear in the Mega Man section of
         Starforce 3 to set up a 4 of a kind, 5 of a kind, Full House, Straight,
         Flush, Straight Flush, or Royal Straight Flush. (Pair and 3 of a kind
         don’t give a bonus)
       </p>
-      <h2 class="GrayHead">VIP Access &amp Quick Reflexes</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="VIP Access &amp Quick Reflexes">
+        VIP Access &amp Quick Reflexes
+      </h2>
+      <p class="textfixbase">
         Requires accessing the Meteor Server at 500% noise or higher. Can be
         done by using a folder of non-dimming, non-elemental battle cards. One
         strategy is equipping Rogue Noise, Sword Fighter 3 and X, with Noise Mod
@@ -288,8 +381,8 @@
         counter the boss 5 times you might even get the Quick Reflexes
         achievement.
       </p>
-      <h2 class="GrayHead">Omega Treasure</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Omega Treasure">Omega Treasure</h2>
+      <p class="textfixbase">
         Can be done after defeating Diamond Ice. The best way of initiating an
         Omega boss fight is traveling to an area that doesn't include the last 2
         areas you have been to. My route loop is Noise Wave 4->Noise Wave
@@ -298,8 +391,10 @@
         Bosses that can be encountered in PlanetFMAstroWave 1 &amp 2 are a 1/32
         chance instead of a 1/64 chance for normal Omega Bosses.
       </p>
-      <h2 class="GrayHead">No Hurt for Hertz</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="No Hurt For Hertz">
+        No Hurt for Hertz
+      </h2>
+      <p class="textfixbase">
         Can be done in Starforce 2 and 3. In Starforce 3 you can use a clocker
         and max-encounter rate to either guarantee a V3 boss, a battle with a
         Hertz in danger, or a G virus battle. The ideal in this scenario is the
@@ -307,38 +402,38 @@
         Cyber Core to get rid of the chance for a V3 battle. Repeat until you
         save 30 Hertz.
       </p>
-      <h2 class="GrayHead">
+      <h2 class="textfixbase GrayHead" id="Illegal Cards &amp Noise Frags">
         Make Some Noise, Stacked Deck, Card Connissuer, &amp Noise Collecter
       </h2>
-      <p class="fixt">
+      <p class="textfixbase">
         This can only be done is Starforce 3. Using the same method as before
         (try Echo Ridge Wave Road) fight a V3 boss and finish with 300% noise
         and under 30 seconds. Repeat until you get 30 Noise Frags (technically
         45 as they are needed fore other achievements) and 30 Illegal Battle
         Cards.
       </p>
-      <h2 class="GrayHead">Lucky Star</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Lucky Star">Lucky Star</h2>
+      <p class="textfixbase">
         Strategy involves buying 90 Attack+10's from the discount bin at Ken
         Suther's BIG WAVE, and going to the SP Traders at Waza and feeding the
         acquired Battle Cards until you unlock Star Chance Mode. Repeat until
         successful.
       </p>
-      <h2 class="GrayHead">Stage Sweeper</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Stage Sweeper">Stage Sweeper</h2>
+      <p class="textfixbase">
         Can be done in Starforce 2 &amp 3. The easiest way is using the Illegal
         Battle Card All Poison which turns all panels on the field into poison,
         which can be comboed with Poision Storm to get the unlock.
       </p>
-      <h2 class="GrayHead">Stars Aligned</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Stars aligned">Stars Aligned</h2>
+      <p class="textfixbase">
         Form any sort of galaxy advance in Starforce 3, Impact cannon only
         requires cards from the Geo, Waza, and Kelvin Folder. When in battle if
         you press cannon, plus cannon, and heavy cannon in that exact order to
         create the Impact Cannon galaxy advance.
       </p>
-      <h2 class="GrayHead">Secret Attack</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Secret Attack">Secret Attack</h2>
+      <p class="textfixbase">
         Can be done in Starforce 2/3 when using the double stone battle card
         with the D-Pad. This can also be done in Starforce 3 by equipping the
         Acid Striker white cards with Acid Ace V3, and pressing the Battle Card
@@ -347,8 +442,8 @@
         etc. the ones mentioned earlier just happen to be accessible almost
         immediately on a save file.
       </p>
-      <h2 class="GrayHead">Close Encounter</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Close Encounter">Close Encounter</h2>
+      <p class="textfixbase">
         Has an incredibly misleading description, where Mega man must defeat an
         enemy that is on the same row as him. A decent way of doing this is
         moving to the side and using the tornado dance battle card (or an
@@ -356,108 +451,108 @@
         virus) or any of their variants. As long as the enemy is deleted on your
         row it should work out correctly.
       </p>
-      <h2 class="GrayHead">Star Supporter</h2>
-      <h3 class="Starforce">Starforce 1</h3>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Star Supporter">Star Supporter</h2>
+      <h3 class="textfixbase Starforce">Starforce 1</h3>
+      <p class="textfixbase">
         Ken Suther will also request a Wide Wave 3 card, which can be found in
         Space Comp 1 while battling the Wibbledum virus with Card Finder (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         At the Sci Museum at Amaken Polly Reade will ask you questions about
         space, the answers being a black hole, 3, and Leo.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to Pat at Boreals Lab in Amaken and go back to Dream Island Dump
         and talk to the man in front of the truck, then head over to the roof of
         Nacy's to find the Sorter Bot there and return to Pat after talking to
         it. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to Mr. Shepar at the Studio on the 2nd floor of Echo Ridge
         Elementary, then head to Nacys roof and talk to the man next to the Moai
         statue and he will sell the figurine for 500 zennys, then return to Mr
         Shepar and receive the reward. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to Luna's father at Nacys roof and give him 5 Moai1 cards which can
         be found using Card Finder in the Time Square EM Wave Road, go back to
         him and get your reward. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to agent Copper outside of Nacy's and find and defeat the wave
         jammers in the Cake Shop, Mowai, and Enormatron Comp and return to
         Copper for a reward. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         At Dream Park talk to Mead Greene and after finishing the first set of
         dialogue talk to him again with shovelman and complete the quest to
         receive the reward (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Head to the junk shop at Dream Island and talk to the old lady Selah
         Agane; she will have you enter the recycled item comp and talk to the
         npc inside and hand them a recover 80 to fix the issue afterwards go
         back to the lady and receive the quest reward. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to John Forman at the City Dump in Dream Island and check the
         sorter bot while using the ThermoMan Navi Card, afterwards get the (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to Boreal at the Island Underground and head back to his lab and
         check the lockers for the album item, afterwards head back to Boreal and
         get the (HP+)
       </p>
-      <h3 class="Starforce">Starforce 2</h3>
-      <p class="fixt">
+      <h3 class="textfixbase Starforce">Starforce 2</h3>
+      <p class="textfixbase">
         Kate Chizer at Hills. Blvd will ask you to take her quiz, and you must
         answer the Star Carrier, Sonia Strumn, and the Shopping Plaza (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Iver Gatte at Wilshire Hills will ask you to answer questions, and the
         correct responses are Matter Waves, A singer, and the Satella Police
         (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Ere Mitic can be found in the Shopping Plaza on the 3rd floor, and you
         must battle virus's after inspecting the Sky Board on the 2nd floor and
         claim indie fragment 1 from him after.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Leroy Mann at Grizzly Peak will require you to select the option I need
         time to think and have the eat machine matter wave to talk to him. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Yugo Astray at the Peak Hotel will make you get a map from the lobby
         counter and return to him with it (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Styg Dismal can be found at Hills. Blvd, respond to him saying that not
         sure I do and have the Ski Matter wave talk to him (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Carma Iffy can be found at Wilshire Hills and you will need 300 Link
         power (use LM Shin and OG Megaman for extra link power), and require you
         to take the to the right of the Sonia Strumn display and talk to Mother
         Hills return back to Carma for the reward. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Nival Peaks at Grizzly Peak needs to fix their star carrier which
         requires you to head to the sled in the middle of the slope (the one
         with the wavehole) and battle the viruses there for a (HP+)
       </p>
-      <h3 class="Starforce">Starforce 3</h3>
-      <p class="fixt">
+      <h3 class="textfixbase Starforce">Starforce 3</h3>
+      <p class="textfixbase">
         Jax Dublex is the man nearby the river at echo Ridge who is inputting
         the code his brother gave him upside down at the apartment complex in
         which the correct code is 196.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Hide Seek is an npc near the Kiosk area at Echo Ridge who will make you
         search Echo Ridge for him, in the end you will find him hiding inside
         the pool (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Hamer Nayl is an old man who will be next to the Echo Ridge Elementary
         gate, and will require you to get rid of graffiti in areas he has built,
         the first site is at the roof of echo ridge elementary behind the roof,
@@ -466,7 +561,7 @@
         ramp behind the castle and inspect the wall at the end to get rid of the
         final piece of Graffiti. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Angel Wise is a girl in the Science Club Room who will have you give
         woody a drink, that will require you to travel to Alohaha and talk to
         the old man and partake in a search hunt to find coconuts near the
@@ -475,40 +570,40 @@
         drink and you find Woody at Waza HQ and give him the drink, after that
         return to the girl for the reward. (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Raida Briz is a kid on the roof of echo ridge elementary who will ask
         you to find his test paper which is on the Wave road above the Big Wave
         (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Sanc Quatr at WBG studios near the event stage will have you pick up
         lunch at Echo Ridge Elementary and return to WBG studios to give lunch
         to the guy in the editing room, the girl in the prop room, and the guy
         near the tree and go back to Sanc for the reward (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Rob Sidkic at Waza HQ will have you defeat three separate overworld
         viruses grouped up together at the ramp at Spica Mall, report back after
         to receive a reward (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Vidy Otaku at Waza HQ will have you go into the Dragon statue Cyber Core
         at the beach and defeat the Mal Wizard inside and report back after
         (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Rob Sidkic has another mission where you need to head to Echo Ridge and
         enter the ERWicket Cyber Core and battle the Malwizard inside, after
         reporting back you will actually receive a giga card (either OxTackle or
         BreakTimeBomb).
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Sugar Suet will make you go to Spica Mall and enter the candy shop to
         acquire Ice Cream for 50 zennys, which will have you go back to Echo
         Ridge, enter the Astro Wave and head back to the command center through
         Waza before the ice cream melts.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         <b
           >After completing these quests you should have 30 help requests done,
           please note that a lot of them include hp memories, which shortens the
@@ -516,71 +611,80 @@
           (BMW)'s or real world examinations.
         </b>
       </p>
-      <h2 class="GrayHead">High Capacity</h2>
-      <h3 class="Starforce">Starforce 1</h3>
-      <p class="fixt">Examine the thermostat is Zack's room for (HP+)</p>
-      <p class="fixt">In Geo's Room EM Wave Road find a (BMW)(HP+)</p>
-      <p class="fixt">In Big Wave EM Wave Road find a (BMW)(HP+)</p>
-      <p class="fixt">In the Video Game Comp of Buds room (BMW)(HP+)</p>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="High Capacity">High Capacity</h2>
+      <h3 class="textfixbase Starforce">Starforce 1</h3>
+      <p class="textfixbase">Examine the thermostat is Zack's room for (HP+)</p>
+      <p class="textfixbase">In Geo's Room EM Wave Road find a (BMW)(HP+)</p>
+      <p class="textfixbase">In Big Wave EM Wave Road find a (BMW)(HP+)</p>
+      <p class="textfixbase">In the Video Game Comp of Buds room (BMW)(HP+)</p>
+      <p class="textfixbase">
         Examine the teachers desk of Class 1A in Echo Ridge Elementary (HP+)
       </p>
-      <p class="fixt">Examine the Cameras in the Studio (HP+)</p>
-      <p class="fixt">
+      <p class="textfixbase">Examine the Cameras in the Studio (HP+)</p>
+      <p class="textfixbase">
         Examine the Blue Statue next to the Dog statue in Times Square near the
         wave hole (HP+)
       </p>
-      <p class="fixt">Examine the garbage trucks at Dream island (HP+)</p>
-      <p class="fixt">
+      <p class="textfixbase">
+        Examine the garbage trucks at Dream island (HP+)
+      </p>
+      <p class="textfixbase">
         Examine the wooden table at Dream Park near the wave hole (HP+)
       </p>
-      <h3 class="Starforce">Starforce 2</h3>
-      <p class="fixt">Geo's Room EM Wave World (BMW)(HP+)</p>
-      <p class="fixt">
+      <h3 class="textfixbase Starforce">Starforce 2</h3>
+      <p class="textfixbase">Geo's Room EM Wave World (BMW)(HP+)</p>
+      <p class="textfixbase">
         Mailbox Comp (BMW)(HP+) (Some of you might have been here for the BN
         Blaster EX achievement)
       </p>
-      <p class="fixt">Junk Box Comp in Bud's Room (BMW)(HP+)</p>
-      <p class="fixt">Step Comp in Zacks Room (BMW)(HP+)</p>
-      <p class="fixt">Big Wave EM Wave World (BMW)(HP+)</p>
-      <p class="fixt">
+      <p class="textfixbase">Junk Box Comp in Bud's Room (BMW)(HP+)</p>
+      <p class="textfixbase">Step Comp in Zacks Room (BMW)(HP+)</p>
+      <p class="textfixbase">Big Wave EM Wave World (BMW)(HP+)</p>
+      <p class="textfixbase">
         Talk to the man in the first floor Shopping Plaza at Wilshire Hills
         (Requires 50 Link Power) (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Examine the drying Ski's on the top floor in the Peak Hotel (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Examine Matter Wave beds in the Suite of Grizzly Peak Hotel (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Talk to the souvenir shop employee of Grizzly Peak Hotel (HP+)
       </p>
-      <h3 class="Starforce">Starforce 3</h3>
-      <p class="fixt">Examine Cable Box (Science Club Room) (HP+)</p>
-      <p class="fixt">
+      <h3 class="textfixbase Starforce">Starforce 3</h3>
+      <p class="textfixbase">Examine Cable Box (Science Club Room) (HP+)</p>
+      <p class="textfixbase">
         Examine the Spimo the Cat poster next to the Wave Station at Spica Mall
         (HP+)
       </p>
-      <p class="fixt">Examine Outfits Display inside Alohaha Castle (HP+)</p>
-      <p class="fixt">Examine the Dragon Statue at the Beach (HP+)</p>
-      <p class="fixt">Examine the Blue Stairs at Waza HQ (HP+)</p>
-      <p class="fixt">
+      <p class="textfixbase">
+        Examine Outfits Display inside Alohaha Castle (HP+)
+      </p>
+      <p class="textfixbase">Examine the Dragon Statue at the Beach (HP+)</p>
+      <p class="textfixbase">Examine the Blue Stairs at Waza HQ (HP+)</p>
+      <p class="textfixbase">
         Examine the Globe at the Command Center of Waza HQ (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Examine the Computers next to the Main Computer in the Command Center at
         Waza HQ (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Examine the green machines in the Secret Shelter at Dealer Hideout (HP+)
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Examine the first machine you see in the Crimson Factory at Dealer
         Hideout (HP+)
       </p>
-      <h2 class="GrayHead">Best Combo Creator &amp Legend Card Creator</h2>
-      <p class="fixt">
+      <h2
+        class="textfixbase GrayHead"
+        id="Best Combo Creator &amp Legend Card Creator"
+      >
+        Best Combo Creator &amp Legend Card Creator
+      </h2>
+      <p class="textfixbase">
         Requires you to have to register 3 best combos. This will more than
         likely happen when farming Mega Battle Cards the important part is to
         make sure you get in attacks consistently during a boss fight and to not
@@ -592,17 +696,17 @@
         of the shopping Plaza and spending 3000 Zennys to turn one of the best
         combos into a legend card.
       </p>
-      <h2 class="GrayHead">Suit Victory</h2>
-      <p class="fixt">
+      <h2 class="textfixbase GrayHead" id="Suit Victory">Suit Victory</h2>
+      <p class="textfixbase">
         Can be done before entering Black Hole Server 1; it involves fighting
         Acid Ace BB and Dread Joker RR the first being in the right side and the
         latter being in the left side of Planet FM Astrowave 3. This requires
         you to have at least 100 standard cards, as there is a barrier for it in
         Noise Wave 5 that will stop you from moving forward.
       </p>
-      <h2 class="GrayHead">Battle Cards</h2>
-      <h3 class="Starforce">Starforce 1</h3>
-      <h4 class="standardCard">Standard Battle Cards</h4>
+      <h2 class="textfixbase GrayHead" id="Battle Cards">Battle Cards</h2>
+      <h3 class="textfixbase Starforce">Starforce 1</h3>
+      <h4 class="textfixbase standardCard">Standard Battle Cards</h4>
       <p class="fixtextbattle">
         <b class="standard">1 Cannon</b> (Geo Folder) <br />
         <b class="standard">2 Plus Cannon</b> (Luna Folder) <br />
@@ -844,15 +948,15 @@
         <b class="standard">149 Paralyze Plus</b> (Geo Folder)<br />
         <b class="standard">150 Attack +10</b> (Geo Folder)<br />
       </p>
-      <h4 class="megaCard">Mega Battle Cards</h4>
-      <p class="fixt">
+      <h4 class="textfixbase megaCard">Mega Battle Cards</h4>
+      <p class="textfixbase">
         Note that for a lot of the bosses I will tell you to get between the
         33-40 second mark this normally forces you into the level 7-10 area
         without accidentally going over and getting the base battle card or
         going under and accidentally s ranking and getting the SP Cards which
         are normally ciphers anyway.
       </p>
-      <p class="fixt">
+      <p class="textfixbase">
         Also note that the SP random Encounter Locations are always the same as
         where the EX ghosts are placed in the map, and that you must pulse out
         once you defeat the EX version of a boss or the SP random encounter wont
@@ -869,7 +973,7 @@
         rank with Card Finder at Lab EM Wave Road)<br />
         <b class="mega">5 Cygnus Wing EX </b> (Battle Cygnus Wing SP (random
         encounter) and delete between 33-40 seconds with Card Finder)<br />
-        <b class="mega">6 Cygnus Wing SP</b> (Cipher Mail)
+        <b class="mega">6 Cygnus Wing SP</b> (Cipher Mail) <br />
         <b class="mega">7 Harp Note</b> (Battle the Harp Note ghost and S rank
         with Card Finder at Vista Point EM Wave Road) <br />
         <b class="mega">8 Harp Note EX</b> (Battle Harp Note SP (random
@@ -907,13 +1011,13 @@
         <b class="mega">23 Wolf Woods EX</b> [fight him again at the Event Stage
         EM Wave Road and S rank (defeat under 30 seconds)] <br />
         <b class="mega">24 Wolf Woods SP</b> (same as before with cancer battle
-        him again (rank doesn’t matter) then claim the Cipher Mail) <br />
+        him again (rank doesn't matter) then claim the Cipher Mail) <br />
         <b class="mega">25 Crown Thunder</b> (Talk to Couronne XIV in Scrapyard
         1 then fight him at the City Dump EM Wave Road) <br />
         <b class="mega">26 Crown Thunder EX</b> [fight him again at the City
-        Dump EM Wave Road and S rank (defeat under 30 seconds)]
+        Dump EM Wave Road and S rank (defeat under 30 seconds)] <br />
         <b class="mega">27 Crown Thunder SP</b> (same as before with cancer
-        battle him again (rank doesn’t matter) then claim the Cipher Mail)<br />
+        battle him again (rank doesn't matter) then claim the Cipher Mail)<br />
         <b class="mega">28 Pegasus Magic, Dragon Sky, and Leo Kingdom</b> (Once
         you have all standard class battle cards challenge your games AM Sage in
         Deep Space 3 and take their mega class card once defeating them, there
@@ -932,7 +1036,7 @@
         note that while you can claim SP cards for the other satellite admins,
         only the one that is connected to your game matters for the library.)<br />
       </p>
-      <h4 class="gigaCard">Giga Battle Cards</h4>
+      <h4 class="textfixbase gigaCard">Giga Battle Cards</h4>
       <p class="fixtextbattle">
         <b class="giga">1 Pegasus Magic GX, Leo Kingdom GX, or Dragon Sky GX</b>
         (Received during story after talking with Satellite admins in Time
